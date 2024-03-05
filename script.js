@@ -2,7 +2,7 @@
 const getAccessTokenEndpoint = "https://mcngbdhb7xy---qf--74j71213j1.auth.marketingcloudapis.com/v2/token";
 const DATA_ENDPOINT = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 const LAMBDA_ENDPOINT = "https://zg72s39v3b.execute-api.us-east-2.amazonaws.com/demo-stage/";
-const SUNOSI_ENDPOINT = "https://zg72s39v3b.execute-api.us-east-2.amazonaws.com/demo-stage/sunosi";
+const SUNOSI_ENDPOINT = "https://yi4k8j8a56.execute-api.us-east-2.amazonaws.com/test-stage/sunosi";
 
 let q3_result = "";
 let q4_result = "";
