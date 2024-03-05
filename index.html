@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="section">
+        <H2>Connect with a SUNOSI Sales Representative</H2>
+        <p>First Name</p>
+        <input type="text" class="textField" id="text-field-FirstName" placeholder="Nathan">
+        <br>
+        <p>Last Name</p>
+        <input type="text" class="textField" id="text-field-LastName" placeholder="Goshay">
+        <br>
+        <p>Email Address</p>
+        <input type="email" class="textField" id="text-field-EmailAddress" placeholder="ngoshay@axsome.com">
+        <br>
+        <p>Phone Number</p>
+        <input type="text" class="textField" id="text-field-PhoneNumber" placeholder="12345">
+        <br>
+        <p>Zipcode</p>
+        <input type="text" class="textField" id="text-field-ZipCode" placeholder="12345">
+        <br>
+        <p>NPI</p>
+        <input type="text" class="textField" id="text-field-Npi" placeholder="12345">
+        <br>
+    </div>
+
+    <!-- tell us more section-->
+    <div class="section">
+        <p>Specialty*</p>
+        <div class="dropdown">
+            <button onclick="showSpecialtyDropdown()" class="dropbtn">Select Specialty</button>
+            <div id="specialtyDropdown" class="dropdown-content">
+              <a onclick="setq3_8()">Sleep specialist</a>
+              <a onclick="setq3_9()">Pulmonologist</a>
+              <a onclick="setq3_10()">Neurologist</a>
+              <a onclick="setq3_11()">Psychiatrist</a>
+              <a onclick="setq3_12()">Primary Care</a>
+              <a onclick="setq3_13()">Other Healthcare Professional</a>
+            </div>
+          </div>
+    </div>
+
+
+
+    <!-- interest section -->
+    <div class="section">
+        <p>What is the general topic of your question?</p>
+        <div class="dropdown">
+            <button onclick="showQuestionDropdown()" class="dropbtn">Select Topic</button>
+            <div id="questionDropdown" class="dropdown-content">
+                <a href="#">Clinical Data</a>
+                <a href="#">Safety and Tolerability</a>
+                <a href="#">Dosing and Titration</a>
+                <a href="#">Cost and Coverage</a>
+                <a href="#">Resources for Patients</a>
+                <a href="#">Other</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="section" id="healthcare-professional-div">
+        <input type="checkbox" id="hcp-checkbox" name="hcp-checkbox">
+        <label for="hcp-checkbox">
+            I confirm that I am a healthcare professional in the U.S.
+        </label>
+    </div>
+
+    <div class="section" id="opt-in-div">
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for="checkbox1">
+            By clicking this checkbox, I confirm that I am 18 years of age or older, 
+            or the age of majority in my state. I also agree to receive email communications from Axsome Therapeutics, Inc., 
+            its affiliates, service providers, and co-promotion partners. These communications may include marketing materials, 
+            market research surveys, and information regarding the development of future products, services, and programs. 
+        </label>
+        <label>
+            I have also read and accept the Privacy Notice and Terms of Use. I understand that I can unsubscribe at any time 
+            by clicking on the link provided in the emails I receive.
+        </label>
+    </div>
+
+    <button type="button" id="submit" class="button-submit" onclick="submitClicked()">Submit</button>
+</body>
+</html>

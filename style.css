@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(222, 192, 227, 0.821);
+}
+
+.textField {
+    height: 20px;
+    width: 200px;
+}
+
+.section {
+    margin: 10px 5px 15px 5px;
+}
+
+#opt-in-div {
+    width: 400px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498db00;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: "solid";
+    color: rgb(26, 23, 23);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
