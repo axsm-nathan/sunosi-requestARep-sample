@@ -42,7 +42,7 @@ async function callLambdaEndpoint() {
       // "Access-Control-Allow-Origin": "https://sfmcdemo.netlify.app", // Required for CORS support to work
       "Content-Type": "application/json" // Required for POST requests to succeed
     },
-    body: JSON.stringify(postData())
+    body: JSON.stringify(compileData())
   })
   .then(response => response.json())
   .then(data => {
