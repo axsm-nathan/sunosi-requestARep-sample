@@ -2,6 +2,7 @@
 const getAccessTokenEndpoint = "https://mcngbdhb7xy---qf--74j71213j1.auth.marketingcloudapis.com/v2/token";
 const DATA_ENDPOINT = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 const LAMBDA_ENDPOINT = "https://zg72s39v3b.execute-api.us-east-2.amazonaws.com/demo-stage/";
+const SUNOSI_ENDPOINT = "https://zg72s39v3b.execute-api.us-east-2.amazonaws.com/demo-stage/sunosi";
 
 let q3_result = "";
 let q4_result = "";
@@ -37,10 +38,10 @@ function submitClicked() {
 async function callLambdaEndpoint() {
   console.log("Calling lambda with API gateway");
 
-  const repsonse = await fetch(LAMBDA_ENDPOINT, {
+  const repsonse = await fetch(SUNOSI_ENDPOINT, {
     method: 'POST',
     headers: {
-      // "Access-Control-Allow-Origin": "https://sfmcdemo.netlify.app", // Required for CORS support to work
+      "Access-Control-Allow-Origin": "https://sunosi-requestarep-sample.netlify.app/#", // Required for CORS support to work
       "Content-Type": "application/json" // Required for POST requests to succeed
     },
     body: JSON.stringify(compileData())
