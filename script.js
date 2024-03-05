@@ -23,6 +23,7 @@ function compileData() {
     "hcp-confirmation": document.getElementById('hcp-checkbox').value,
   }
 
+  console.log(postData);
   return postData;
 }
 
