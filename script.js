@@ -20,8 +20,9 @@ function compileData() {
     "Npi": document.getElementById("text-field-Npi").value,
     "q3": q3_result,
     "q4": q4_result,
-    "opt-in": document.getElementById('checkbox1').value,
-    "hcp-confirmation": document.getElementById('hcp-checkbox').value,
+    "opt-in": document.getElementById('checkbox1').checked,
+    "hcp-confirmation": document.getElementById('hcp-checkbox').checked,
+    "Product": "sunosi"
   }
 
   console.log(postData);
@@ -89,10 +90,10 @@ function setq3_9() { q3_result = "a9"; }
 function setq3_10() { q3_result = "a10"; }
 function setq3_11() { q3_result = "a11"; }
 function setq3_12() { q3_result = "a12"; }
+function setq3_13() { q3_result = "a13"; }
 
-function setq4_a13() { q4_result = "a13"; }
-function setq4_a13() { q4_result = "a14"; }
-function setq4_a13() { q4_result = "a15"; }
-function setq4_a13() { q4_result = "a16"; }
-function setq4_a13() { q4_result = "a17"; }
-function setq4_a13() { q4_result = "a18"; }
+function setq4_13() { q4_result = "a14"; }
+function setq4_13() { q4_result = "a15"; }
+function setq4_13() { q4_result = "a16"; }
+function setq4_13() { q4_result = "a17"; }
+function setq4_13() { q4_result = "a18"; }
