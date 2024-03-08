@@ -42,7 +42,7 @@ async function callLambdaEndpoint() {
   const repsonse = await fetch(SUNOSI_ENDPOINT, {
     method: 'POST',
     headers: {
-      "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+      "Origin": "https://sunosi-requestarep-sample.netlify.app", // Required for CORS support to work
       "Content-Type": "application/json" // Required for POST requests to succeed
     },
     body: JSON.stringify(compileData())
