@@ -16,7 +16,7 @@ function compileData() {
     "LastName": document.getElementById("text-field-LastName").value,
     "EmailAddress": document.getElementById("text-field-EmailAddress").value,
     "PhoneNumber": document.getElementById("text-field-PhoneNumber").value,
-    "ZipCode": document.getElementById("text-field-ZipCode").value,
+    "Zipcode": document.getElementById("text-field-ZipCode").value,
     "Npi": document.getElementById("text-field-Npi").value,
     "q3": q3_result,
     "q4": q4_result,
